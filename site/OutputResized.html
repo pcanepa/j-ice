@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html style="height:100%">
+<head>
+<title>J ICE web-manipulator-Output Resized</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script src="jsmol/JSmol.min.js"></script>
+<script src="jsmol/js/Jmol2.js"></script>
+<script>
+	function refreshModelX() {
+
+	}
+
+	function getState() {
+		if (!opener) {
+			alert("The page that opened this pop-up window is not available.")
+			return ""
+		}
+		return opener.jmolGetPropertyAsString("stateInfo");
+	}
+
+	jmolInitialize("jsmol");
+
+	// note that body AND html BOTH must have style="height:100%" in html5 in order to use 100%
+	
+</script>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body style="height:100%">
+|
+<a href="javascript:jmolScript(getState())" class="message">Refresh
+Model</a>
+|
+<a href='javascript:jmolScript("write IMAGE ?");' class="message">Save
+Image</a>
+|
+<a href='javascript:jmolScript("write POVRAY ?.pov");' class="message">Save
+POV-ray</a>
+|
+<script>jmolApplet( [ "100%", "90%" ],"script javascript:getState()")</script>
+</body>
+</html>

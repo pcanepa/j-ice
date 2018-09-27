@@ -1,0 +1,10 @@
+//load "";
+//reset ALL;
+#frame first;
+color property_spin;
+#print {*/1}.property_magneticMoment.all;
+select *;label off;
+select property_spin = 1;  label "\u2191"  # up arrow;
+select property_spin = -1;  label "\u2193"  # down arrow;
+select *;font label 40;
+#color property_magneticMoment;

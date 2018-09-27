@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html style="height:100%">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="js-ice.js"></script>
+<script src="libraries/flot/jquery.js"></script>
+<script src="libraries/flot/jquery.flot2.js"></script>
+<!-- script src="libraries/flot/jquery.flot.crosshair.js"></script  -->
+<title>J ICE web-manipulator-Spectrum</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body style="height:100%">
+<script>
+docWriteSpectrumHeader();
+$(function(){plotSpectrumHTML()})
+</script>
+
+<div id="scalespectrum" class="contents_spectrum"></div>
+<div id="plotSpectrum"
+	style="width: 800px; height: 400px; background-color: white; text-color: white;"></div>
+</body>
+</html>

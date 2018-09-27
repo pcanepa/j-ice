@@ -74,12 +74,13 @@ function onClickModSpec() {
 			break;
 		}
 	}	
-	var vib = getbyID('vib');			
+	var vib = getbyID('vib');	
+	//MP 09/19/18 Changed i+1 to InfoFreq[i].modelNumber		
 	switch (rad_val) {
 	case "all":
 		for (var i = 0; i < InfoFreq.length; i++) {
 			if (InfoFreq[i].modelProperties.Frequency != null) {
-				addOption(vib, i + " " + InfoFreq[i].name, i + 1);
+				addOption(vib, i + " " + InfoFreq[i].name, InfoFreq[i].modelNumber);
 			}
 		}
 		break;	
@@ -87,7 +88,7 @@ function onClickModSpec() {
 		for (var i = 0; i < InfoFreq.length; i++) {
 			if (InfoFreq[i].modelProperties.Frequency != null) {
 				if (InfoFreq[i].modelProperties.IRactivity == "A") {
-					addOption(vib, i + " " + InfoFreq[i].name, i + 1);
+					addOption(vib, i + " " + InfoFreq[i].name, InfoFreq[i].modelNumber);
 				}
 			}
 		}
@@ -96,7 +97,7 @@ function onClickModSpec() {
 		for (var i = 0; i < InfoFreq.length; i++) {
 			if (InfoFreq[i].modelProperties.Frequency != null) {
 				if (InfoFreq[i].modelProperties.Ramanactivity == "A") {
-					addOption(vib, i + " " + InfoFreq[i].name, i + 1);
+					addOption(vib, i + " " + InfoFreq[i].name, InfoFreq[i].modelNumber);
 				}
 			}
 		}
