@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+     How can I show to people my simulated vibrational frequencies with JS-ICE?
+    </title>
+    <link rel="stylesheet" href="css/freqexport.css" type="text/css" />
+  </head>
+  <body>
+    <div id="thebox">
+      <div id="logo"></div>
+      <div id="content">
+      		
+      	<h1>
+         How can I show to people my simulated vibrational frequencies throughout a friendly HTML page?
+        </h1>
+        
+        <p>
+      	This page leads the user in the creation (step by step) of web pages showing
+      	outputs of frequency calculations.
+      	</p>	
+      	
+      	<p>
+      	<ol>
+      	 <li> Load in <a href='http://j-ice.sourceforge.net/' target='_blank'>JS-ICE</a> the output files produced with <a href="http://www.crystal.unito.it" target="_blank">CRYSTAL09</a> (06, 03), <a href="http://cms.mpi.univie.ac.at/vasp/" target="blank">VASP</a> or <a href="http://www.pwscf.org/" target="_blank">QuantumEspresso</a> (package PHon).
+      	      <br>Watch the video here.<br> 
+      	 </li>
+      	 
+      	 <li> Modify the structure as you wish with the options available in <a href='http://j-ice.sourceforge.net/' target='_blank'>J-ICE</a> <i>i.e.</i>: change atom colour, change bond connectivity, change background, make polyedra, <i>etc.</i>.</li>
+      	 <br>Watch the video <a href='http://j-ice.sourceforge.net/howto.html' target='_blank'>here</a>.<br> 
+      	
+			<p align="center" class='warning'>You should be at this stage now</p>      	
+      	
+      	 <li><b>Create a new folder</b> through the file manager of your operative system as shown in the picture below. <b>This is meant to contain the web-page and the other necessary files</b>.  The structure of your folder must follow the follow scheme reported below.  
+      		 <br>
+      		  <div align="center"><img src="images/organiz.png" width="339" height="299"  style="border:none;" border="0" name="organiz" alt="folder-organization" align="middle"></div>
+      		  <br>
+      		  *Files: current.spt, output.dat and webpage.html will be created during the automatic procedure.
+      		  <ul>
+      		  
+					<li> current.spt contains info about the previous changes done on the actual structure with <a href='http://j-ice.sourceforge.net/' target='_blank'>J-ICE</a>.</li>     
+					<li> output.dat is the simulation output.</li>	
+					<li> webpage.html is obviously the web page.</li>	  
+      		  </ul>
+      	 </li>
+      	 
+      	 <li>
+				Nested into the web-page folder you must also make a <b>new folder called jmol</b> (all small letters, see Picture above).       	 
+   
+      	 </li>
+      	 
+      	 <li><b>Download and uncompressJmol</b> into the jmol folder (as created in step 4) form <a href='jmol/jmol.zip' target='_blank'>here</a>.</li>
+      	
+				    <p align="center" class='warning'> WARNING: Make sure to rename the uncompressed folder in jmol</p>     	
+      	
+      	 <li>Click on the button below <b>save HTML frequencies</b>. </li>
+      	 
+      	 <p align="center" class='warning'> WARNING: Avoid filename changes during the export operation</p>    
+      	
+      	</ol>
+      	
+      	<p align="center" ><input type='button' value='save HTML frequencies' OnClick='window.opener.createHTML(); window.close(); '> </p>
+      	</p>
+      	
+      	
+      </div>
+      <br><br>
+      </div>
+    <div id="foot">
+      <a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" style="border:0;width:88px;height:31px" /></a> <a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" /></a> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://creativecommons.org/images/public/somerights20.png" /></a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+/************************************************************
+Verizon kuler
+***********************************************************/
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color:#777;
+}
+
+
+a:link, a:active, a:visited {
+	color: #999795;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #999795;
+}
+
+
+#thebox {
+	width: 720px;
+	background-color: white;
+	color: #E0D8D3;
+	border: 1px #E6E8E7 solid;
+	margin: 50px auto 0px auto;
+	padding: 0px 20px 0 20px;
+}
+
+
+#logo { 
+	text-align: center;
+	width:300px;
+	height:100px;
+	border: 4px #777 solid;
+	margin: -50px 5px 30px -100px;
+	padding: 30px 10px 5px 10px;
+	background-image:url('../images/logo.jpg');
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+
+#nav {
+	width: 630px;
+	margin: -90px 0px 50px 200px;
+	padding: 0px 0px 0px 0px;
+	color: #999;
+	font-family: 'Gill Sans', Verdana, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 14pt;
+}
+
+#nav li {
+	list-style: none;
+	display: inline;
+	margin-right: 15px;
+}
+
+#nav a {
+	font-size: 11px;
+	font-weight: bold;
+	color: #777;
+	text-decoration: none;
+	border: none;
+}
+
+#nav b {
+	color: #FF3333;
+	font-weight: bold;
+	bond-style: italic;
+}
+
+#nav a:hover {
+	color: #4188C8;
+	padding-top: 2px;
+	padding-bottom: 2px;
+    border-top-width: thin;
+	border-top-style: dotted;
+	border-top-color: #999795;
+	border-bottom-width: thin;
+	border-bottom-style: dotted;
+	border-bottom-color: #999795;
+}
+
+
+
+/**************************************************************************
+Content
+**************************************************************************/
+#content {
+    width: 700px;
+    color: #777;
+    text-align: left;
+    font-family: 'Gill Sans', Verdana, Helvetica, sans-serif;
+    margin: 40px 0px 0px 0px;
+    padding: 10px 10px 10px 10px;
+}
+
+
+#content h1 {
+	font-size:14px;
+	color: #4188C8;
+}
+
+#content h1 a:link, a:visited, a:active {
+	color: #0044FF;
+	font-family: 'Gill Sans', Verdana, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+#content h1 a:hover {
+	text-decoration: underline;
+	font-family: 'Gill Sans', Verdana, Helvetica, sans-serif;
+	color: #003399;
+}
+
+#content img{
+	border-color: #777;
+	border-width: 4px;
+	border-style: solid;
+}
+
+#content h2 { 
+	font-size: 11px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+
+
+
+#content h3 { 
+	font-size: 13px;
+	letter-spacing: 1px;
+}
+
+#content hr {
+   background-color: #777;
+   color: #777;
+   height: 4px;
+} 
+
+#content b{
+   color:#f00;
+}
+
+#content img{
+  margin-left: 5px;
+}
+
+#foot {
+	margin-top: -10px;
+	text-align: center;
+	color: #1C3A6C;
+}
+
+
+li {margin:.5em 10% .5em 0}
+
+p.warning{
+ color: #00008B;
+text-transform: uppercase;
+font-size:14px;
+font-weight: bold;
+ }
+
+
+

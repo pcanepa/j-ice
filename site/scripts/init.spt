@@ -1,0 +1,8 @@
+set antialiasDisplay
+set hiddenLinesDashed
+history on; 
+set history 2; 
+stereo OFF; 
+spin off; 
+set perspectiveDepth OFF;
+javascript(makeDisable("filename"));

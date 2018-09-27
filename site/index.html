@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html style="height:101%">
+<head>
+<title>JS-ICE web-manipulator</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="JS-ICE a Jmol interface for Crystallographic and Electronic properties">
+    <meta name="keywords" content="js-ice, CRYSTAL, CRYSTAL09, CRYSTAL98, CRYSTAL03, CRYSTAL06, crystal, crystal09, crystal06, crystal03, crystal98, VASP, vasp, CASTEP, castep, PWSCF, pwscf, quantum espresso, QUANTUM ESPRESSO, Siesta, SIESTA, siesta, CUBE, cube , Jmol, JMOL, jmol, J-ICE, Crystallographic ">
+    <meta name="keywords" content="Pieremanuele Canepa, Canepa, Pieremanuele, pieremanuele ">
+
+    <meta name="author" content="JS-ICE">
+    <meta name="Distribution" content="Global">
+    <meta name="Rating" content="General">
+    <meta name="Robots" content="INDEX,FOLLOW">
+    <meta name="Revisit-after" content="1 Day">
+    
+
+
+
+<script src="jsmol/JSmol.min.js"></script>
+<script src="jsmol/js/Jmol2.js"></script>
+
+<script src="libraries/flot/excanvas.js"></script>
+<script src="libraries/flot/jquery.flot2.js"></script>
+<script src="libraries/flot/showobj.js"></script>
+<script src="libraries/flot/json2.js"></script>
+
+<script src="libraries/jmol/JmolColorPicker.js"></script>
+
+<script src="libraries/webfx/range.js"></script>
+<script src="libraries/webfx/timer.js"></script>
+<script src="libraries/webfx/slider.js"></script>
+
+<script src="libraries/iucr/jtkt.js"></script>
+
+<script src="js-ice.js"></script>
+
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="css/luna/luna.css" type="text/css">
+<link rel="stylesheet" href="libraries/toltip/jquery.tooltip.css" />
+
+<link rel="shortcut icon" href="images/favicon.ico" >
+<link rel="icon" type="image/gif" href="images/animated_favicon1.gif" >
+<script>
+
+jmolInitialize("jsmol", "jmol/JmolAppletSigned0.jar");
+defineMenu();
+
+/*
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25927657-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+*/
+
+ </script>
+</head>
+<body>
+<div id="whole">
+	<div class="top">
+  		<p class="parleft">Release 2.2.0
+		by P. Canepa and R. Hanson - Updated Tue 11 Sep 2018 07:33:23 +08- powered by <a href='https://sourceforge.net/projects/jsmol/' target='blank'>JSmol</a></p>
+		<p class="paright"><a href='http://j-ice.sourceforge.net/?page_id=6' target='_blank'>Help</a> | <a href='http://j-ice.sourceforge.net/#ack' target='_blank'>Acknowledgments</a></p>
+	</div>
+	<div class="menubar">
+		<script>docWriteTabs()</script>
+	</div>
+	<div id="middle">
+		<div class="japplet">
+			<script>createApplet()</script>
+			<div class="bottomframe">
+				<script>docWriteBottomFrame()</script>
+			</div>
+		</div>
+		<div class="rightframe">
+			<script>docWriteRightFrame()</script>
+		</div>
+	</div>
+</div>
+<script>loadSliders()</script>
+</body>
+</html>
